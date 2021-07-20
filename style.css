@@ -1,0 +1,86 @@
+* {
+	margin: 0%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+    --ff-primary: 'Source Code Pro', monospace;
+
+	--fw-regular: 300;
+	--fw-medium: 500;
+	--fw-bold: 900;
+
+	--fontsize-h1: 3.125rem;
+	--fontsize-p: 2rem;
+	--fontsize-btn: 1.5rem;
+
+	--color-light: #e0e0e0;
+	--color-dark: #303030;
+	
+	 --boxshadow: 0.25em 0.25em .75em rgba(0, 0, 0,.25),
+                    0.125em 0.125em 0.25em rgba(0, 0, 0,.15);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: var(--ff-primary);
+	letter-spacing: 1px;
+}
+
+.div {
+	text-align: center;
+	padding: 10px;
+	color: var(--color-light);
+	margin-bottom: 1.875rem;
+}
+
+.color-generator__container {
+	background: var(--color-dark);
+	width: 700px;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-direction: column;
+	border-radius:10px;
+	box-shadow: var(--boxshadow);
+}
+
+.color-generator__title {
+	width: 80%;
+}
+
+h1 {
+	font-size: var(--fontsize-h1);
+	font-weight: var(--fw-bold);
+}
+
+.color-generator__values {
+	width: 100%;
+}
+
+p {
+	font-size: var(--fontsize-p);
+	font-weight: var(--fw-medium);
+}
+
+.btn {
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	background: #303030;
+	box-shadow:  6px 6px 10px #292929, -6px -6px 10px #373737;
+	transition: 30ms ease-in-out;
+	width: 15rem;
+	height: 4rem;
+	margin-top: 1.875rem;
+	font-size: var(--fontsize-btn);
+	font-weight: var(--fw-regular);
+	letter-spacing: 1px;
+}
+
+
