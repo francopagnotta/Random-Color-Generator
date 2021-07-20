@@ -4,6 +4,9 @@
 	box-sizing: border-box;
 }
 
+
+
+/* VARIABLES */
 :root {
     --ff-primary: 'Source Code Pro', monospace;
 
@@ -22,6 +25,9 @@
                     0.125em 0.125em 0.25em rgba(0, 0, 0,.15);
 }
 
+
+
+/* BODY */
 body {
 	display: flex;
 	justify-content: center;
@@ -31,43 +37,57 @@ body {
 	letter-spacing: 1px;
 }
 
-.div {
-	text-align: center;
-	padding: 10px;
-	color: var(--color-light);
-	margin-bottom: 1.875rem;
-}
 
+
+/* COLOR GENERATOR CONTAINER */
 .color-generator__container {
 	background: var(--color-dark);
-	width: 700px;
-	height: 500px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items:center;
 	flex-direction: column;
 	border-radius:10px;
 	box-shadow: var(--boxshadow);
 }
 
+
+
+/* TITLE CONTAINER */
 .color-generator__title {
-	width: 80%;
+	text-align: center;
+	padding: 10px;
+	color: var(--color-light);
 }
 
+/* title */
 h1 {
 	font-size: var(--fontsize-h1);
 	font-weight: var(--fw-bold);
 }
 
+
+
+/* VALUES CONTAINER */
 .color-generator__values {
-	width: 100%;
+	text-align: center;
+	padding: 10px;
+	color: var(--color-light);
 }
 
+/* paragraph */
 p {
 	font-size: var(--fontsize-p);
 	font-weight: var(--fw-medium);
 }
 
+
+
+/* BUTTON CONTAINER */
+.color-generator__btn {
+	text-align: center;
+}
+
+/* button */
 .btn {
 	border: none;
 	outline: none;
@@ -75,12 +95,157 @@ p {
 	background: #303030;
 	box-shadow:  6px 6px 10px #292929, -6px -6px 10px #373737;
 	transition: 30ms ease-in-out;
-	width: 15rem;
-	height: 4rem;
-	margin-top: 1.875rem;
 	font-size: var(--fontsize-btn);
 	font-weight: var(--fw-regular);
 	letter-spacing: 1px;
 }
 
 
+/* RESPONSIVE WEB DESIGN - mobile first */
+
+/* min-width 200px */
+@media screen and (min-width : 200px) {
+   .color-generator__container {
+	   width: 150px;
+	   height: 350px;
+	   
+   }
+
+   .color-generator__title {
+	   width: 100%;
+   }
+
+   h1 {
+	   font-size: 1.3rem;
+   }
+
+   .color-generator__values {
+	   width: 100%;
+   }
+
+   p {
+	   font-size: .76rem;
+   }
+
+   .color-generator__btn {
+	   width: 100%;
+   }
+
+   .btn {
+	   width: 70%;
+	   height: 2.5rem;
+	   font-size: .7rem;
+   }
+}
+
+
+/* min-width 320px */
+@media screen and (min-width : 320px) {
+   .color-generator__container {
+	   width: 250px;
+	   height: 350px;
+	   
+   }
+
+   .color-generator__title {
+	   width: 100%;
+   }
+
+   h1 {
+	   font-size: 1.875rem;
+   }
+
+   .color-generator__values {
+	   width: 100%;
+   }
+
+   p {
+	   font-size: 1.25rem;
+   }
+
+   .color-generator__btn {
+	   width: 100%;
+   }
+
+   .btn {
+	   width: 70%;
+	   height: 3rem;
+	   font-size: 1.15rem;
+   }
+}
+
+/* min-width 768px */
+@media screen and (min-width : 768px) {
+   .color-generator__container {
+	   width: 300px;
+	   height: 350px;
+   }
+}
+
+/* min-width 1200px */
+@media screen and (min-width : 1200px) {
+   .color-generator__container {
+	   width: 350px;
+	   height: 400px;
+   }
+
+   .color-generator__title {
+	   width: 100%;
+   }
+
+   h1 {
+	   font-size: 2rem;
+   }
+
+   .color-generator__values {
+	   width: 100%;
+   }
+
+   p {
+	   font-size: 1.5rem;
+   }
+
+   .color-generator__btn {
+	   width: 100%;
+   }
+
+   .btn {
+	   width: 70%;
+	   height: 3rem;
+	   font-size: 1.25rem;
+   }
+}
+
+/* min-width 1600px */
+@media screen and (min-width : 1600px) {
+   .color-generator__container {
+	   width: 350px;
+	   height: 400px;
+   }
+
+   .color-generator__title {
+	   width: 100%;
+   }
+
+   h1 {
+	   font-size: 2rem;
+   }
+
+   .color-generator__values {
+	   width: 100%;
+   }
+
+   p {
+	   font-size: 1.5rem;
+   }
+
+   .color-generator__btn {
+	   width: 100%;
+   }
+
+   .btn {
+	   width: 70%;
+	   height: 3rem;
+	   font-size: 1.25rem;
+   }
+}

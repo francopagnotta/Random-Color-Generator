@@ -13,7 +13,6 @@ const generateRandomColor = ()=> {
 	return rgb;
 }
 
-
 // BUTTON
 button.style.color = `var(--color-light)`
 
