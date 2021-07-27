@@ -55,14 +55,13 @@ body {
 /* TITLE CONTAINER */
 .color-generator__title {
 	text-align: center;
-	padding: 10px;
 	color: var(--color-light);
 }
 
 /* title */
 h1 {
 	font-size: var(--fontsize-h1);
-	font-weight: var(--fw-bold);
+	font-weight: var(--fw-medium);
 }
 
 
@@ -70,7 +69,6 @@ h1 {
 /* VALUES CONTAINER */
 .color-generator__values {
 	text-align: center;
-	padding: 10px;
 	color: var(--color-light);
 }
 
@@ -177,7 +175,7 @@ p {
 /* min-width 768px */
 @media screen and (min-width : 768px) {
    .color-generator__container {
-	   width: 300px;
+	   width: 250px;
 	   height: 350px;
    }
 }
@@ -185,8 +183,8 @@ p {
 /* min-width 1200px */
 @media screen and (min-width : 1200px) {
    .color-generator__container {
-	   width: 350px;
-	   height: 400px;
+	   width: 260px;
+	   height: 360px;
    }
 
    .color-generator__title {
@@ -219,8 +217,8 @@ p {
 /* min-width 1600px */
 @media screen and (min-width : 1600px) {
    .color-generator__container {
-	   width: 350px;
-	   height: 400px;
+	   width: 260px;
+	   height: 360px;
    }
 
    .color-generator__title {
